@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Linrooms博客</title>
+<style>
+#nav{
+	width:1300px;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(images/nav.png);
+	background-repeat:no-repeat;
+}
+#nav ul li{
+	font-size:14px;
+	list-style-type:none;
+	float:right;
+	margin-right:30px;
+	margin-top:20px;
+	position:relative;
+	right:80px;
+}
+#nav h2{
+	line-height:60px;
+	margin-left:50px;
+}
+#nav a{
+	text-decoration:none;
+	color:white;
+}
+#content{
+	width:1300px;
+	height:1800px;
+	background-color:#E8E8E8;
+	margin-left:auto;
+	margin-right:auto;
+}
+#content01{
+	background-color:#E8E8E8;
+	float:left;
+}
+#content01 h2 a{
+	margin-left:30px;
+	margin-right:30px;
+	color:#3d658d;
+	font-family:黑体;
+	font-weight:normal;
+	letter-spacing:2px;
+	position:relative;
+	top:30px;
+	text-decoration:none;	
+}
+#content01 h2 a:hover{
+	text-decoration:underline
+}
+#content01 p a{
+	text-decoration:none;
+}
+#content01 p a:hover{
+	background-color:#7976ED;
+	color:white;
+}
+#content01 h5{
+	margin-left:30px;
+	margin-right:30px;
+	position:relative;
+	top:5px;
+	color:#3d658d;
+	font-family:黑体;
+	font-weight:normal;	
+	
+}
+#content01 h4{
+	margin-left:30px;
+	margin-right:30px;
+	font-size:18px;
+	color:#3F3F3F;
+}
+#content01 p{
+	margin-left:30px;
+	margin-right:30px;
+	font-family:黑体;
+	font-size:14px;
+	color:#595959;
+	line-height:25px;
+}
+
+#left01{
+	width:870px;
+	height:1730px;
+	background-color:#FFF;	
+	margin-left:50px;
+	margin-top:30px;
+	overflow:scroll;
+}
+
+#content02{
+	background-color:#E8E8E8;
+	float:right;
+}	
+#content02 h4{
+	color:#373737;
+	margin-left:15px;
+	margin-right:15px;
+	font-family:黑体;
+	position:relative;
+	top:10px;
+}	
+#right01{
+	width:300px;
+	background:#FFF;
+	margin-right:50px;
+	margin-top:30px;
+}
+
+#right01 p{
+	margin-left:15px;
+	margin-right:15px;
+	font-size:14px;
+	line-height:25px;
+	color:#595959;
+	
+}
+
+ 
+#right02{
+	width:300px;
+	background:#FFF;
+	margin-right:50px;
+	margin-top:25px;
+}
+#right02 #flash{
+	clear:both;
+	height:250px;
+	font-size:14px;
+	display:none;
+	border:1px solid #CCC;
+	background:#EBEBEB; 
+	position:relative;
+}
+#right02 #flash ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+#right02 #flash .ys1{
+	margin-left:5px; 
+	float:left; 
+	text-align:center; 
+	height:16px; 
+	line-height:16px; 
+	width:16px; 
+	background:#333; 
+	color:#FFF; 
+	font-weight:bold; 
+	font-size:12px; 
+	cursor:pointer;
+	_display:inline-block; 
+}
+#right02 #flash .ys2{
+	margin-left:5px; 
+	float:left; 
+	text-align:center; 
+	height:16px; 
+	line-height:16px; 
+	width:16px; 
+	background:#820000; 
+	color:#FFF; 
+	font-weight:bold; 
+	font-size:12px; 
+	cursor:pointer;
+	_display:inline-block; 
+}
+#right02 h3 a{
+	color:#000;
+	text-decoration:none;
+}
+#right02 h3{
+	margin-top:-1px;
+	font-size:15px;
+	float:left;
+	width:74px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	margin-bottom:-1px; /*位置往下1像素遮挡div边框*/	
+	}
+#right02 .xiaotu{
+	background:#FFF;
+	border-top:1px solid #3d658d;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:0px;
+	
+}
+
+
+#right03{
+	width:300px;
+	background:#FFF;
+	margin-right:50px;
+	margin-top:25px;
+}
+#right03 li a{
+	color:#3d658d;
+	display:block;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	text-decoration:none;
+	font-size:14px;
+	line-height:30px;
+}
+#right03 li a:hover{
+	text-decoration:underline;
+}
+#right03 ul{
+	list-style-type:none;
+	padding-left:15px;
+	padding-bottom:50px;
+}
+#right04{
+	width:300px;
+	background:#FFF;
+	margin-right:50px;
+	margin-top:25px;
+}
+#right04 .numb1{
+	position:relative;
+	text-align:center;	
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+}
+#right04 .numb2{
+	position:relative;
+	text-align:center;
+	top:80px;	
+	font-size:18px;
+
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+	display:none;	
+	
+}
+#right04 .numb3{
+	position:relative;
+	text-align:center;
+	top:80px;	
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+	display:block;	
+}
+#right04 .numb4{
+	position:relative;
+	text-align:center;	
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+	display:none;	
+}
+#right04 .numb5{
+	position:relative;
+	text-align:center;	
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+	display:block;
+}
+#right05{
+	width:300px;
+	background:#FFF;
+	margin-right:50px;
+	margin-top:25px;
+}
+#right05 ul li{
+	float:left;
+	width:140px;
+}
+#right05 ul li a{
+	color:#3d658d;
+	display:block;
+	white-space:nowrap;
+	text-decoration:none;
+	font-size:14px;
+	line-height:30px;
+
+}
+#right05 li a:hover{
+	text-decoration:underline;
+}
+#right05 ul{
+	list-style-type:none;
+	padding-left:15px;
+	padding-bottom:50px;
+	height:230px;
+}
+
+#bottom{
+	margin-left:auto;
+	margin-right:auto;
+	width:1250px;
+	height:60px;
+	background-color:#CDCDCD;
+	font-size:14px;
+	padding-left:50px;
+	padding-top:20px;
+	color:#2085c5;
+}
+#bottom a{
+	text-decoration:none;
+	margin-left:15px;
+	color:#2085c5;
+}
+#bottom a:hover{
+	text-decoration:underline;
+}
+#bottom p{
+	margin-top:0px;
+}
+
+</style>
+<script src="JQuery/jquery-2.1.1.min.js"></script>
+<script>
+function mOver(obj){
+	document.getElementById("erwei").style.display="block";
+	
+	}
+function mOut(obj){
+	document.getElementById("erwei").style.display="none";
+	}
+	
+	
+	
+$(function(){
+	 var H3 = $('div#right02>h3');
+	 var Div = $('div#right02>div');
+	 var _index = 0;
+	 H3.hover(function(){
+		 _index = H3.index(this);
+		 $(this).addClass('xiaotu').siblings().removeClass('xiaotu');
+		 Div.stop(true,true).fadeOut(0,function(){
+			 Div.eq(_index).fadeIn(0)
+			 })
+			 
+		 })
+	});
+
+
+
+$(document).ready(function(){
+	var shuliang = $('ul#num1>li').length;
+	var index = 1;
+	var int;
+	function qiehuan(n){
+		$("ul#num1>li").removeClass().addClass("ys2").eq(n).toggleClass("ys2").addClass("ys1");
+		$("div#img1>div").fadeOut().eq(n).fadeIn();
+		}
+		
+		function zidong(){
+			if(index==shuliang){
+				index=0;
+				}
+			qiehuan(index);
+			index=index+1;
+			}
+		int = setInterval(zidong,3000);
+		
+		$("ul#num1>li").mouseover(function(){
+			clearInterval(int);
+			var index_shuzi = $("ul#num1>li").index(this);
+			qiehuan(index_shuzi);
+			index=index_shuzi+1;
+			})
+			
+		$("ul#num1>li").mouseout(function(){
+			int = setInterval(zidong,3000);
+			})
+	});
+$(document).ready(function(){
+	var shuliang = $('ul#num2>li').length;
+	var index = 1;
+	var int;
+	function qiehuan(n){
+		$("ul#num2>li").removeClass().addClass("ys2").eq(n).toggleClass("ys2").addClass("ys1");
+		$("div#img2>div").fadeOut().eq(n).fadeIn();
+		}
+		
+		function zidong(){
+			if(index==shuliang){
+				index=0;
+				}
+			qiehuan(index);
+			index=index+1;
+			}
+		int = setInterval(zidong,3000);
+		
+		$("ul#num2>li").mouseover(function(){
+			clearInterval(int);
+			var index_shuzi = $("ul#num2>li").index(this);
+			qiehuan(index_shuzi);
+			index=index_shuzi+1;
+			})
+			
+		$("ul#num2>li").mouseout(function(){
+			int = setInterval(zidong,3000);
+			})	
+	});
+$(document).ready(function(){
+	var shuliang = $('ul#num3>li').length;
+	var index = 1;
+	var int;
+	function qiehuan(n){
+		$("ul#num3>li").removeClass().addClass("ys2").eq(n).toggleClass("ys2").addClass("ys1");
+		$("div#img3>div").fadeOut().eq(n).fadeIn();
+		}
+		
+		function zidong(){
+			if(index==shuliang){
+				index=0;
+				}
+			qiehuan(index);
+			index=index+1;
+			}
+		int = setInterval(zidong,3000);
+		
+		$("ul#num3>li").mouseover(function(){
+			clearInterval(int);
+			var index_shuzi = $("ul#num3>li").index(this);
+			qiehuan(index_shuzi);
+			index=index_shuzi+1;
+			})
+			
+		$("ul#num3>li").mouseout(function(){
+			int = setInterval(zidong,3000);
+			})	
+	});
+$(document).ready(function(){
+	var shuliang = $('ul#num4>li').length;
+	var index = 1;
+	var int;
+	function qiehuan(n){
+		$("ul#num4>li").removeClass().addClass("ys2").eq(n).toggleClass("ys2").addClass("ys1");
+		$("div#img4>div").fadeOut().eq(n).fadeIn();
+		}
+		
+		function zidong(){
+			if(index==shuliang){
+				index=0;
+				}
+			qiehuan(index);
+			index=index+1;
+			}
+		int = setInterval(zidong,3000);
+		
+		$("ul#num4>li").mouseover(function(){
+			clearInterval(int);
+			var index_shuzi = $("ul#num4>li").index(this);
+			qiehuan(index_shuzi);
+			index=index_shuzi+1;
+			})
+			
+		$("ul#num4>li").mouseout(function(){
+			int = setInterval(zidong,3000);
+			})	
+	});
+
+$(document).ready(function(){
+	$('div.Numb>.numb1').click(function(){
+		$('div.Numb>.numb1').fadeOut(1000);
+		setTimeout(function(){show1();
+			},5000);
+		setTimeout(function(){show2();
+			},9000);
+		function show1(){
+			$('div.Numb>.numb2').removeClass().addClass("numb3").fadeOut(3000);
+			}
+		function show2(){
+			$('div.Numb>.numb4').removeClass().addClass("numb5").fadeIn(3000);
+			}
+		})
+	});
+	
+	
+</script>
+
+
+</head>
+
+<body>
+<div id="nav">
+<ul>
+	<li><a href="公告.html">公告</a></li>
+    <li><a href="小工具.html">小工具</a></li>
+    <li><a href="资料库.html">我的资料库</a></li>
+    <li><a href="前端导航.html">前端导航</a></li>
+    <li><a href="#">关于我</a></li>
+    <li><a href="文章存档.html">文章存档</a></li>
+    <li><a href="首页.html">首页</a></li>
+</ul>
+
+<h2><a href="#">Linrooms</a></h2>
+
+</div>
+<div id="content">
+    <div id="content01">
+        <div id="left01">
+        	<h2><a href="#">关于让自己不再害怕与人的交往方法</a></h2>
+            <h5>2015年11月17日</h5>
+            <h4>有什么方法可以让我不再害怕与人交往吗？</h4>
+            <p style="border-top:1px dashed #000;"></p>
+            <p>女朋友和我都29了。在我之前她谈过两个男朋友。谈起以前的感情，女朋友说自己哭过、分分合合过。我当时不清楚女朋友过去的具体情况，头脑里构想出这样的画面，女朋友有一个在外地工作的男朋友，他们彼此喜欢，可是由于距离，才不得已要分手，当时我很理解女朋友所所说"女人的青春等不起"。于是和女朋友在一起了。<br /><br />
+
+后来在我的询问下知道了女友前任的具体的情况，经我分析认为她第一任男友不负责任，第二任更是一个人渣。<br /><br />
+
+我的心理问题也随之而来：我一方面对她两个前任感到愤怒；另一方面我愤怒女朋友觉得她傻到家了。我想和女朋友分手，可是又还有那么一点舍不得，女朋友真的是很好的一个女孩子，不物质、有公德、无不良嗜好、特节约的同时又能把生活过得很丰富。同时我想报复她的前一任。<br /><br />
+
+带着这样的心理问题，我在网页和电话咨询了心理咨询师，花了2000多。目前我在我们的城市面对面的咨询心理咨询师，系统心理咨询又是6000多。我的心理咨询师的看法是：女朋友有谈恋爱的权利，我可以接受也可以放弃；同时对她第二任男友的判断依据不充分，报复他更是法律不允许的，既然事实不清楚，法律不允许，让我放下。
+<br /><br />
+我个人觉得，咨询师第一点是对的。第二点我不认同，我觉得我的判断依据很充分，虽然报复是法律不允许的，但是渣男应该受到惩罚，法律未规范的并不代表是合理的，咨询师说的放下我总觉得像是阿Q精神，一种变态的自虐。即使法律追究我，我愿意坐牢，但是我不会低头。到这里，我的心理咨询师说我的认知很肤浅，还问我来咨询的目的是什么？说如果不按照他的方向走，咨询就没有意义了，要我考虑。
+<br /><br />
+我不知道如何接受女朋友，但是又舍不得她。
+<br /><br />
+<br /><br />
+吴晓芬(默默)：
+<br /><br />
+在你的讲述中感受到：
+<br /><br />
+1，对女朋友曾经的经历没有办法接受。对女友选择的前男友无法接受。
+<br /><br />
+2，因为第一点，花了很多钱去寻求各种心理咨询，但是对于咨询的效果和咨询师的说法，内心也不大能够接受。
+<br /><br />
+回头来看你最初寻求心理咨询的问题以及做了心理咨询之后内心的感受，是否有觉察到这两件事情的共同点：你的内心有追求完美的倾向。那么是否面对你生活中的其它问题都有可能让你产生类似的困扰？
+<br /><br />
+我觉得那个咨询师有一些不妥的地方，就是对你的评价方面。然而我在想，你选择了他并在那里做了这么久的心理咨询，你对他信任是否有你的原因？
+<br /><br />
+当选择了之后发现事情非自己所想，这个时候不甘舍弃但又不能接受，让自己陷入内心的两难和纠结挣扎中，久久而无法自拔。
+<br /><br />
+你对女友的心情，就如同你得到了你想要的那种质地的一块美玉，你很满意，你本来也对它很满意。但有一天有人提醒你，这块玉中仿佛有个小黑点在里面，然后你发现了，而且你还放大了，从此这个黑点进入了你的心里，甚至比这块玉本身还大在。成为了一种难言的折磨，让你想要丢弃这块玉，但却又感不舍。觉得没有这个黑点这块玉会多完美多好啊。可惜啊，日日夜夜为此事烦恼，还要付出金钱和心力去做许多心理咨询，为了解开这个困扰。
+<br /><br />
+你的咨询师，想要帮助你"放下"对这块玉中的这个小黑点的执着，他说的并没有错。但是他可能没有真正的帮助到你也不假。
+<br /><br />
+谈到自虐，你觉得那个咨询师所说的"放下"是一种自虐，是因为你感觉那些事情不应该发生，自己的本心也是接受不了的，既然接受不了，还要放下，那岂不是自虐：相当于逼自己做一件做不到及不愿做的事情。
+<br /><br />
+这个时候我想请你看看你内心原本存在的一种自虐：选择了这块玉，但内心深处并不愿意去承担选择的一切后果,不愿意接受那块玉带着的瑕疵。弃之不舍,万般纠结.
+<br /><br />
+世间之事大多难以完美，一块玉带有瑕疵很常见，一块美玉也有可能曾经落入沟渠，可是如果你不去想它曾经落入沟渠那件事，依然无损于这块美玉。一个好女人有着一些不堪的过往也很常见。只是你是否清晰，自己内心最想要的是什么？最在乎的是什么？
+<br /><br />
+过去的事情，有如往日之风，有如昨天的云，是记忆中的一个事件，但早已经烟消云散，当你把昨日的那块云放进你的心里，你的内心便是阴云密布，你会忘记今天天空晴朗的事实，如果你愿意，把昨日发生的事情一直都放在你的内心，长年累月的占据你的内心，而忽略了此时其实你正在阳光灿烂的天空之下你想有着明媚阳光的事实，这不像是一种严重的自虐吗？
+<br /><br />
+这里面有一个重要的点，是很容易被我们忽略的，那就是我们内心的选择，选择把不堪的过往放进我们的内心，这是我们内心可以选择的，是其他人无法干预的。
+<br /><br />
+你可以追求完美，你可以不接受你女友的过往，也可以不接受你的女友，这是你的选择，然后你需要承担你选择的后果，也就是现在的纠结难受，愤恨。
+<br /><br />
+想一想你要的是什么？你要的是一个好的女朋友，一段好的亲密关系，两个人在一起甜蜜的小生活，还是你要的是一个没有不好过往和经历的女友？<br /><br />
+哪个对你来说比较重要？你会否愿意为了自己内心最重要和最想要的而放弃那个不那么重要的？
+<br /><br />
+你是否会愿意为了自己选择这个女朋友而承担所有的后果(包括了意想之外的后果)？
+<br /><br />
+选择她就意味着你不能不去接受她过往的经历。你的女朋友，她之所以会成为你眼前的她，是因为她曾有过的所有经历。包括遇到渣男的事实，如果没有遇到那个渣男。如果遇到的是好男人，你还有这个女朋友吗？还有如果没有遇到那个渣男你的女朋友会遇见你而选择你吗？也不排除你的女友因为有过往的那些情感经历而内心更加的成长成熟，因此更懂得珍惜和对你好。因为我们遇到的事情总会让自己成长，因为遇到一些不好的人，所以会选择一些对自己好的人。这些都是有因果关系的。只是往往我们没有去看到这样的因果关系，所以会无法放下。
+<br /><br />
+当事情没有如你所愿，你会愿意为自己的选择的后果承担吗？
+<br /><br />
+比如说，你为了帮助自己选择做心理咨询，然后你认为你的咨询师没有帮助到自己，反而可能造成自己精神上和金钱上的一些损失，这个时候事情已经发生，你已经付出了时间金钱也可能已经受伤。面对这样的结果，你要怎么来帮助自己面对？
+<br /><br />
+此时的你，若是内心有一个特别明确的目标：为了尽快的帮助自己解脱出来，尽最大的可能减少自己精神还有金钱上各方面的损失。那么你可能会愿意为了这个目标，去承担起自己选择的责任。告诉自己，是自己选择的这个咨询师所有的后果愿意去承担，也愿意为了帮助自己尽快的得到内心的解脱和自由和内心的安宁而愿意去接受过去所有事情的发生。
+<br /><br />
+只是为了一个原因：自己不再忍受内心的煎熬和受虐。不再把那些让自己愤恨的事情放在心里而让自己在接下来的每分每秒饱受过往事情的继续折磨。
+<br /><br />
+你是一个成年人，你有权利和自由去做你认为正确的事情。别人可能也阻止不了你下定决心去做一件事情，比如说你想要报复女友的前任男友。只是需要提醒，你需要为自己的每一个选择每做的一件事情承担相应的后果。当你心存愤恨和报复，你是否把过去的事情装进了你的心里，让你分分钟活在过往的事件而非当下的现实中，然后饱受着过去事件的折磨。你把过去装进你的心里，你会愿意为自己内心的选择承担如此的结果吗？
+<br /><br />
+去报复女友的前任男友，然后付出相应的代价，你认为值得吗？为了女友过往的选择(和渣男在一起是她的选择，她都愿意为自己承担，所以她没有活在过往当中，所以她没有你现在的痛苦)，而赔上自己(坐牢或是下半生)，你认为值得就可以。只是那样，你的女友还会和你在一起吗？而你想要的是这样的生活吗？
+<br /><br />
+想一想你想要的是什么，你选择的你是否会愿意去承担其结果。只有选择和承担而已。
+<br /><br />
+这些问题看似不同，而它们有着一个共同的根源，内心有着对事情追求完美的倾向，所以无法放过那些不好的，要去改变和去掉它们。但是内心如此的选择可能会让自己陷入更加痛苦和无法解脱的境地——内心的选择让自己活在过往而非现在。
+<br /><br />
+你会否愿意为自己内心的选择而承担？当你愿意的时候你的内心或许会多一份平静，因为你知道自己选择了什么，你也愿意去承受。而当你选择了又不愿意去承担的时候，这个时候内心就多了一层冲突。都说能够帮到自己的人最终是自己，一点都不假。就是你内心的选择会决定一切。
+<br /><br />
+你可以不必放下，你可以一直对女友和她的前男友耿耿于怀，报复或是一直想报复，你可以选择这样，可是选择的同时意味着你要承担你现在的困扰，你内心的冲突，你把这些不好的事情和人放在内心一遍遍地用你现在和未来的时间去体验这些。你愿意吗？
+<br /><br />
+你内心选择的时候已经意味着你在承担了，但是愿意承担会让你产生一份觉知，为自己负责的觉知。因为开始对自己负责，所以你会越来越知道自己内心真正想要的是什么，然后你或许会愿意为了自己真正想要和渴望的，而进行一些选择，有所取和有所舍。因为你会越来越清楚，你内心的选择会给自己带来了什么。而这里需要提醒你的是，不被你意识到的内心的选择，最需要被你意识到和承担。
+<br /><br />
+当你直面你上述的问题，这是我们内在成长的过程和课题，当你愿意去直面，这些事件所费的金钱以及咨询经历都会成为对你来说有意义的部分。
+<br /><br />
+往往我们困惑和无助，是因为不知道我们是有得选择的，因为不知道自己内心的选择导致了我们的心理状态和严重困扰，所以会很无助，没有办法帮助到自己，感觉整个生活是失控的。心理咨询的作用恰好就是，借助专业人士，帮助自己看到内心，由于认清楚自己的心理过程，从而有一种自我的掌控感，从而我们发现自己内心的力量，原来我们是可以帮到自己的!
+<br /><br />
+当内心愿意承担，一切事件都会促成自我的成长</p>     
+        </div>
+
+        
+    </div>
+    <div id="content02">
+    	<div id="right01">
+        <h4>关于linrooms博客</h4>
+        <hr style="border-top:1px solid #FBEEFD"></hr>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;linrooms博客，是Lin个人技术博客，主要记录和总结心理学方面的知识及我的生活。<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;订阅博客文章，请关注下方微信号，后期会通过订阅号将文章发送到您的手机上。<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;本博客所有内容若需转载请联系我。</p>
+        <h4>联系方式</h4>
+        <hr style="border-top:1px solid #FBEEFD"></hr>
+        <p><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1098214972&amp;site=qq&amp;menu=yes" target="_blank"><img src="images/企鹅.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/微信.png" onmouseover="mOver(this)" onmouseout="mOut(this)"/></p>
+        <p id="erwei" style="display:none;"><img src="images/二维码.png"</p>
+        </div>
+        
+        <div id="right02">
+            <h3 class="xiaotu"><a href="#">独白</a></h3>
+            <h3><a href="#">心情</a></h3>  
+            <h3><a href="#">唯美</a></h3>
+            <h3><a href="#">发现</a></h3>
+            <div id="flash" style="display:block">
+            	<div id="img1" style="position:absolute;left:0;width:300px; height:250px; overflow:hidden">
+                	<div style="width:300px; height:250px; background:url(images/dubai/1.png)"></div>
+                    <div style="width:300px; height:250px; background:url(images/dubai/2.png)"></div>
+        			<div style="width:300px; height:250px; background:url(images/dubai/3.png)"></div>
+       			    <div style="width:300px; height:250px; background:url(images/dubai/4.png)"></div>
+                </div>	
+                <ul id="num1" style="position:absolute; right:0px; bottom:0px;height:16px">
+                   <li class="ys1">1</li>
+                   <li class="ys2">2</li>
+                   <li class="ys2">3</li>
+                   <li class="ys2">4</li>
+                </ul>
+            </div>
+            <div id="flash">
+            	<div id="img2" style="position:absolute;left:0;width:300px; height:250px; overflow:hidden">
+                	<div style="width:300px; height:250px; background:url(images/xinqing/1.png)"></div>
+                    <div style="width:300px; height:250px; background:url(images/xinqing/2.png)"></div>
+        			<div style="width:300px; height:250px; background:url(images/xinqing/3.png)"></div>
+       			    <div style="width:300px; height:250px; background:url(images/xinqing/4.png)"></div>
+                </div>	
+                <ul id="num2" style="position:absolute; right:0px; bottom:0px;height:16px">
+                   <li class="ys1">1</li>
+                   <li class="ys2">2</li>
+                   <li class="ys2">3</li>
+                   <li class="ys2">4</li>
+                </ul>
+            </div>
+            <div id="flash">
+            	<div id="img3" style="position:absolute;left:0;width:300px; height:250px; overflow:hidden">
+                	<div style="width:300px; height:250px; background:url(images/weimei/1.png)"></div>
+                    <div style="width:300px; height:250px; background:url(images/weimei/2.png)"></div>
+        			<div style="width:300px; height:250px; background:url(images/weimei/3.png)"></div>
+       			    <div style="width:300px; height:250px; background:url(images/weimei/4.png)"></div>
+                </div>	
+                <ul id="num3" style="position:absolute; right:0px; bottom:0px;height:16px">
+                   <li class="ys1">1</li>
+                   <li class="ys2">2</li>
+                   <li class="ys2">3</li>
+                   <li class="ys2">4</li>
+                </ul>
+            </div>
+            <div id="flash">
+            	<div id="img4" style="position:absolute;left:0;width:300px; height:250px; overflow:hidden">
+                	<div style="width:300px; height:250px; background:url(images/faxian/1.png)"></div>
+                    <div style="width:300px; height:250px; background:url(images/faxian/2.png)"></div>
+        			<div style="width:300px; height:250px; background:url(images/faxian/3.png)"></div>
+       			    <div style="width:300px; height:250px; background:url(images/faxian/4.png)"></div>
+                </div>	
+                <ul id="num4" style="position:absolute; right:0px; bottom:0px;height:16px">
+                   <li class="ys1">1</li>
+                   <li class="ys2">2</li>
+                   <li class="ys2">3</li>
+                   <li class="ys2">4</li>
+                </ul>
+            </div>
+		</div>
+        
+        <div id="right03">
+        <h4>热门文章</h4>
+        <hr style="border-top:1px solid #FBEEFD"></hr>
+        <ul>
+        <li><a href="/post/css_input_uploadmh" title="本文将着墨于探讨是什么驱使了极限运动者冒着致残甚至致命的危险">本文将着墨于探讨是什么驱使了极限运动者冒着致残甚至致命的危险</a></li>
+        <li><a href="/post/sublime_use" title="约炮心理学：男人不信任美女，女人信任帅哥">约炮心理学：男人不信任美女，女人信任帅哥</a></li>
+        <li><a href="/post/css3_bg_multi" title="为什么没人喜欢你？可能是因为你太"正常"了">为什么没人喜欢你？可能是因为你太"正常"了</a></li>
+        <li><a href="/post/css_mh_ck_radio" title="为什么我们都会在青春期时暗恋一个人？">为什么我们都会在青春期时暗恋一个人？</a></li>
+        <li><a href="/post/input_file_leixing" title="姑娘，为什么你觉得自己"不配被爱"？">姑娘，为什么你觉得自己"不配被爱"？</a></li>
+        <li><a href="/post/js_setTimeout" title="真正的成长，是学会和自己在一起">真正的成长，是学会和自己在一起</a></li>
+        <li><a href="/post/js_youku_tk" title="父母的道歉，比他们给的伤害更难承受">父母的道歉，比他们给的伤害更难承受</a></li>
+        <li><a href="/post/css_unit_calc" title="如何正确的看待自己，找到人生方向？">如何正确的看待自己，找到人生方向？</a></li>
+        <li><a href="/post/css_common" title="你又不是我，你怎么知道我面对抑郁没有坚强过？">你又不是我，你怎么知道我面对抑郁没有坚强过？</a></li>
+        <li><a href="/post/juzhuzheng_jf_dy" title="我原谅你，并不代表你是对的">我原谅你，并不代表你是对的</a></li>
+        <li><a href="/post/mailto_link_html" title="你每日的生活模式，就是你命运的一个横切面">你每日的生活模式，就是你命运的一个横切面</a></li>
+        </ul>
+        </div>
+        <div id="right04">
+        <h4>轻松一刻</h4>
+        <div class="Numb" style="height:200px;width:300px;position:relative;top:0px;left:0px">
+            <div class="numb1"><img src="images/dianwo.png"/></div>
+            <div class="numb2">让你点就点,你真可爱！</div>
+            <div class="numb4"><img src="images/laugh.gif" height="200";width="300"/></div>
+    </div>
+        </div>
+        <div id="right05">
+        <h4>友情链接</h4>
+        <hr style="border-top:1px solid #FBEEFD"></hr>
+        <ul class="friendship">
+              <li><a href="#" title="前端博客">前端博客</a></li>
+              <li><a href="#" title="前端技术">前端技术</a></li>
+              <li><a href="#/" title="前端技术博客">前端技术博客</a></li>
+              <li><a href="#" title="web技术博客">web技术博客</a></li>
+              <li><a href="#" title="haorooms前端博客">haorooms前端博客</a></li>
+              <li><a href="#" title="前端开发">前端开发</a></li>
+              <li><a href="#" title="上海SAP培训" target="_blank">上海SAP培训</a></li>
+              <li><a href="#" title="SAP培训" target="_blank">SAP培训</a></li>
+              <li><a href="#" title="rin部落" target="_blank">rin部落</a></li>
+              <li><a href="#" title="淡忘~浅思" target="_blank">淡忘~浅思</a></li>
+              <li><a href="#" title="前端攻城狮" target="_blank">前端攻城狮</a></li>
+              <li><a href="#" title="web前端开发" target="_blank">web前端开发</a></li>
+              <li><a href="#" title="一只羊博客" target="_blank">一只羊博客</a></li>
+<!--          <li><a href="http://www.lerry.cn/" title="lerry技术博客" target="_blank">lerry技术博客</a></li> -->
+              <li><a href="#" title="前端开发培训" target="_blank">前端开发培训</a></li>
+              <li><a href="#" title="web前端开发" target="_blank">web前端开发</a></li>  
+              <li><a href="#" title="前端度" target="_blank">前端度</a></li>  
+              <li><a href="#" target="_blank">php小松博客</a></li>
+              <li><a href="#" target="_blank">问津专家云</a></li> 
+        </ul>
+        </div>
+        
+    </div>
+</div>
+<div id="bottom">
+我的:<a href="#">csdn博客</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">新浪微博</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">百度空间</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">知乎</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">昵图</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">github</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">网站地图</a>
+<p>Copyright © Aaron All Rights Reserved <a href="#">沪ICP备14034283号-1</a></p>
+</div>
+</body>
+</html>

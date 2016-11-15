@@ -1,0 +1,105 @@
+
+/* CSS Document */
+.body{
+	font-family: Microsoft YaHei
+}
+#nav{
+	width:1300px;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(../images/nav.png);
+	background-repeat:no-repeat;
+}
+#nav ul li{
+	font-size:14px;
+	list-style-type:none;
+	float:right;
+	margin-right:30px;
+	margin-top:20px;
+	position:relative;
+	right:80px;
+}
+#nav h2{
+	line-height:60px;
+	margin-left:50px;
+}
+#nav a{
+	text-decoration:none;
+	color:white;
+}
+
+#content{
+	width:1300px;
+	background-color:#E8E8E8;
+	margin-left:auto;
+	margin-right:auto;
+	height:500px;
+}
+#content01{
+	float:left;
+	width:1200px;	
+	margin-left:50px;
+	margin-top:30px;
+	
+}
+#content01 h3{
+	background-color:#635FFC;
+	width:80px;
+	height:30px;
+	color:white;
+	padding-left:20px;
+	padding-top:5px;
+	font-weight:normal;
+	letter-spacing:3px;	
+}
+#content01 ul{
+	position:absolute;
+	left:33px;
+	
+}
+#content01 ul li{
+	list-style:none;
+	float:left;
+	width:17%;
+	height:89px;
+	font-size:12px;
+	color:#7B7B7B;
+	background-color:white;
+	margin-right:50px;
+	margin-bottom:30px;
+	line-height:30px;
+	padding:10px 20px;
+	overflow:hidden;
+}
+#content01 ul a{
+	text-decoration:none;
+	font-size:14px;
+	font-weight:bold;
+	color:#61B3E6;	
+}
+
+
+#bottom{
+	margin-left:auto;
+	margin-right:auto;
+	width:1250px;
+	height:60px;
+	background-color:#CDCDCD;
+	font-size:14px;
+	padding-left:50px;
+	padding-top:20px;
+	color:#2085c5;
+}
+#bottom a{
+	text-decoration:none;
+	margin-left:15px;
+	color:#2085c5;
+}
+#bottom a:hover{
+	text-decoration:underline;
+}
+#bottom p{
+	margin-top:0px;
+}
+

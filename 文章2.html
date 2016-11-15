@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Linrooms博客</title>
+<style>
+#nav{
+	width:1300px;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(images/nav.png);
+	background-repeat:no-repeat;
+}
+#nav ul li{
+	font-size:14px;
+	list-style-type:none;
+	float:right;
+	margin-right:30px;
+	margin-top:20px;
+	position:relative;
+	right:80px;
+}
+#nav h2{
+	line-height:60px;
+	margin-left:50px;
+}
+#nav a{
+	text-decoration:none;
+	color:white;
+}
+#content{
+	width:1300px;
+	height:1800px;
+	background-color:#E8E8E8;
+	margin-left:auto;
+	margin-right:auto;
+}
+#content01{
+	background-color:#E8E8E8;
+	float:left;
+}
+#content01 h2 a{
+	margin-left:30px;
+	margin-right:30px;
+	color:#3d658d;
+	font-family:黑体;
+	font-weight:normal;
+	letter-spacing:2px;
+	position:relative;
+	top:30px;
+	text-decoration:none;	
+}
+#content01 h2 a:hover{
+	text-decoration:underline
+}
+#content01 p a{
+	text-decoration:none;
+}
+#content01 p a:hover{
+	background-color:#7976ED;
+	color:white;
+}
+#content01 h5{
+	margin-left:30px;
+	margin-right:30px;
+	position:relative;
+	top:5px;
+	color:#3d658d;
+	font-family:黑体;
+	font-weight:normal;	
+	
+}
+#content01 h4{
+	margin-left:30px;
+	margin-right:30px;
+	font-size:18px;
+	color:#3F3F3F;
+}
+#content01 p{
+	margin-left:30px;
+	margin-right:30px;
+	font-family:黑体;
+	font-size:14px;
+	color:#595959;
+	line-height:25px;
+}
+
+#left01{
+	width:870px;
+	height:1730px;
+	background-color:#FFF;	
+	margin-left:50px;
+	margin-top:30px;
+	overflow:scroll;
+}
+
+#content02{
+	background-color:#E8E8E8;
+	float:right;
+}	
+#content02 h4{
+	color:#373737;
+	margin-left:15px;
+	margin-right:15px;
+	font-family:黑体;
+	position:relative;
+	top:10px;
+}	
+#right01{
+	width:300px;
+	background:#FFF;
+	margin-right:50px;
+	margin-top:30px;
+}
+
+#right01 p{
+	margin-left:15px;
+	margin-right:15px;
+	font-size:14px;
+	line-height:25px;
+	color:#595959;
+	
+}
+
+ 
+#right02{
+	width:300px;
+	background:#FFF;
+	margin-right:50px;
+	margin-top:25px;
+}
+#right02 #flash{
+	clear:both;
+	height:250px;
+	font-size:14px;
+	display:none;
+	border:1px solid #CCC;
+	background:#EBEBEB; 
+	position:relative;
+}
+#right02 #flash ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+#right02 #flash .ys1{
+	margin-left:5px; 
+	float:left; 
+	text-align:center; 
+	height:16px; 
+	line-height:16px; 
+	width:16px; 
+	background:#333; 
+	color:#FFF; 
+	font-weight:bold; 
+	font-size:12px; 
+	cursor:pointer;
+	_display:inline-block; 
+}
+#right02 #flash .ys2{
+	margin-left:5px; 
+	float:left; 
+	text-align:center; 
+	height:16px; 
+	line-height:16px; 
+	width:16px; 
+	background:#820000; 
+	color:#FFF; 
+	font-weight:bold; 
+	font-size:12px; 
+	cursor:pointer;
+	_display:inline-block; 
+}
+#right02 h3 a{
+	color:#000;
+	text-decoration:none;
+}
+#right02 h3{
+	margin-top:-1px;
+	font-size:15px;
+	float:left;
+	width:74px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	margin-bottom:-1px; /*位置往下1像素遮挡div边框*/	
+	}
+#right02 .xiaotu{
+	background:#FFF;
+	border-top:1px solid #3d658d;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:0px;
+	
+}
+
+
+#right03{
+	width:300px;
+	background:#FFF;
+	margin-right:50px;
+	margin-top:25px;
+}
+#right03 li a{
+	color:#3d658d;
+	display:block;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	text-decoration:none;
+	font-size:14px;
+	line-height:30px;
+}
+#right03 li a:hover{
+	text-decoration:underline;
+}
+#right03 ul{
+	list-style-type:none;
+	padding-left:15px;
+	padding-bottom:50px;
+}
+#right04{
+	width:300px;
+	background:#FFF;
+	margin-right:50px;
+	margin-top:25px;
+}
+#right04 .numb1{
+	position:relative;
+	text-align:center;	
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+}
+#right04 .numb2{
+	position:relative;
+	text-align:center;
+	top:80px;	
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+	display:none;	
+	
+}
+#right04 .numb3{
+	position:relative;
+	text-align:center;
+	top:80px;	
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+	display:block;	
+}
+#right04 .numb4{
+	position:relative;
+	text-align:center;	
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+	display:none;	
+}
+#right04 .numb5{
+	position:relative;
+	text-align:center;	
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+	display:block;
+}
+#right05{
+	width:300px;
+	background:#FFF;
+	margin-right:50px;
+	margin-top:25px;
+}
+#right05 ul li{
+	float:left;
+	width:140px;
+}
+#right05 ul li a{
+	color:#3d658d;
+	display:block;
+	white-space:nowrap;
+	text-decoration:none;
+	font-size:14px;
+	line-height:30px;
+
+}
+#right05 li a:hover{
+	text-decoration:underline;
+}
+#right05 ul{
+	list-style-type:none;
+	padding-left:15px;
+	padding-bottom:50px;
+	height:230px;
+}
+
+#bottom{
+	margin-left:auto;
+	margin-right:auto;
+	width:1250px;
+	height:60px;
+	background-color:#CDCDCD;
+	font-size:14px;
+	padding-left:50px;
+	padding-top:20px;
+	color:#2085c5;
+}
+#bottom a{
+	text-decoration:none;
+	margin-left:15px;
+	color:#2085c5;
+}
+#bottom a:hover{
+	text-decoration:underline;
+}
+#bottom p{
+	margin-top:0px;
+}
+
+</style>
+<script src="JQuery/jquery-2.1.1.min.js"></script>
+<script>
+function mOver(obj){
+	document.getElementById("erwei").style.display="block";
+	
+	}
+function mOut(obj){
+	document.getElementById("erwei").style.display="none";
+	}
+	
+	
+	
+$(function(){
+	 var H3 = $('div#right02>h3');
+	 var Div = $('div#right02>div');
+	 var _index = 0;
+	 H3.hover(function(){
+		 _index = H3.index(this);
+		 $(this).addClass('xiaotu').siblings().removeClass('xiaotu');
+		 Div.stop(true,true).fadeOut(0,function(){
+			 Div.eq(_index).fadeIn(0)
+			 })
+			 
+		 })
+	});
+
+
+
+$(document).ready(function(){
+	var shuliang = $('ul#num1>li').length;
+	var index = 1;
+	var int;
+	function qiehuan(n){
+		$("ul#num1>li").removeClass().addClass("ys2").eq(n).toggleClass("ys2").addClass("ys1");
+		$("div#img1>div").fadeOut().eq(n).fadeIn();
+		}
+		
+		function zidong(){
+			if(index==shuliang){
+				index=0;
+				}
+			qiehuan(index);
+			index=index+1;
+			}
+		int = setInterval(zidong,3000);
+		
+		$("ul#num1>li").mouseover(function(){
+			clearInterval(int);
+			var index_shuzi = $("ul#num1>li").index(this);
+			qiehuan(index_shuzi);
+			index=index_shuzi+1;
+			})
+			
+		$("ul#num1>li").mouseout(function(){
+			int = setInterval(zidong,3000);
+			})
+	});
+$(document).ready(function(){
+	var shuliang = $('ul#num2>li').length;
+	var index = 1;
+	var int;
+	function qiehuan(n){
+		$("ul#num2>li").removeClass().addClass("ys2").eq(n).toggleClass("ys2").addClass("ys1");
+		$("div#img2>div").fadeOut().eq(n).fadeIn();
+		}
+		
+		function zidong(){
+			if(index==shuliang){
+				index=0;
+				}
+			qiehuan(index);
+			index=index+1;
+			}
+		int = setInterval(zidong,3000);
+		
+		$("ul#num2>li").mouseover(function(){
+			clearInterval(int);
+			var index_shuzi = $("ul#num2>li").index(this);
+			qiehuan(index_shuzi);
+			index=index_shuzi+1;
+			})
+			
+		$("ul#num2>li").mouseout(function(){
+			int = setInterval(zidong,3000);
+			})	
+	});
+$(document).ready(function(){
+	var shuliang = $('ul#num3>li').length;
+	var index = 1;
+	var int;
+	function qiehuan(n){
+		$("ul#num3>li").removeClass().addClass("ys2").eq(n).toggleClass("ys2").addClass("ys1");
+		$("div#img3>div").fadeOut().eq(n).fadeIn();
+		}
+		
+		function zidong(){
+			if(index==shuliang){
+				index=0;
+				}
+			qiehuan(index);
+			index=index+1;
+			}
+		int = setInterval(zidong,3000);
+		
+		$("ul#num3>li").mouseover(function(){
+			clearInterval(int);
+			var index_shuzi = $("ul#num3>li").index(this);
+			qiehuan(index_shuzi);
+			index=index_shuzi+1;
+			})
+			
+		$("ul#num3>li").mouseout(function(){
+			int = setInterval(zidong,3000);
+			})	
+	});
+$(document).ready(function(){
+	var shuliang = $('ul#num4>li').length;
+	var index = 1;
+	var int;
+	function qiehuan(n){
+		$("ul#num4>li").removeClass().addClass("ys2").eq(n).toggleClass("ys2").addClass("ys1");
+		$("div#img4>div").fadeOut().eq(n).fadeIn();
+		}
+		
+		function zidong(){
+			if(index==shuliang){
+				index=0;
+				}
+			qiehuan(index);
+			index=index+1;
+			}
+		int = setInterval(zidong,3000);
+		
+		$("ul#num4>li").mouseover(function(){
+			clearInterval(int);
+			var index_shuzi = $("ul#num4>li").index(this);
+			qiehuan(index_shuzi);
+			index=index_shuzi+1;
+			})
+			
+		$("ul#num4>li").mouseout(function(){
+			int = setInterval(zidong,3000);
+			})	
+	});
+
+$(document).ready(function(){
+	$('div.Numb>.numb1').click(function(){
+		$('div.Numb>.numb1').fadeOut(1000);
+		setTimeout(function(){show1();
+			},5000);
+		setTimeout(function(){show2();
+			},9000);
+		function show1(){
+			$('div.Numb>.numb2').removeClass().addClass("numb3").fadeOut(3000);
+			}
+		function show2(){
+			$('div.Numb>.numb4').removeClass().addClass("numb5").fadeIn(3000);
+			}
+		})
+	});
+	
+	
+</script>
+
+
+</head>
+
+<body>
+<div id="nav">
+<ul>
+	<li><a href="公告.html">公告</a></li>
+    <li><a href="小工具.html">小工具</a></li>
+    <li><a href="资料库.html">我的资料库</a></li>
+    <li><a href="前端导航.html">前端导航</a></li>
+    <li><a href="#">关于我</a></li>
+    <li><a href="文章存档.html">文章存档</a></li>
+    <li><a href="首页.html">首页</a></li>
+</ul>
+
+<h2><a href="#">Linrooms</a></h2>
+
+</div>
+<div id="content">
+    <div id="content01">
+        <div id="left01">
+        	<h2><a href="#">关于让自己不再害怕与人的交往方法</a></h2>
+            <h5>2015年11月17日</h5>
+            <h4>有什么方法可以让我不再害怕与人交往吗？</h4>
+            <p style="border-top:1px dashed #000;"></p>
+            <p>近期热播的犯罪心理电视剧《他来了，请闭眼》出现了"连环杀人案"。观影过程中，观众在感慨"连环杀人狂"残忍无情的同时不免产生疑问，现实中真的存在着"连环杀人狂"吗？他们是如何"炼成"的？本文将针对这些疑问，尝试进行解读。温馨提示，以下内容不涉及剧透，对于未曾看过该电视剧的读者，阅读本文将有助于你更好地观影，请安心阅读。<br /><br />
+一、"连环杀人狂"，在影视作品里经常能看到，在现实中真的存在吗？<br /><br />
+现实中确实存在着"连环杀人狂"。影视作品中的"连环杀人狂"的原型大多数是来源于现实。<br /><br />
+最出名的"连环杀人狂"当属"开膛手杰克"——1888年8月7日到11月8日间，于伦敦东区的白教堂一带以残忍手法连续杀害至少五名妓女的凶手（代称）。犯案期间，凶手多次写信至相关单位挑衅，却始终未落入法网。"开膛手杰克"后被多部文学、影视作品所呈现、改编。<br /><br />
+骇人听闻的还有美国历史上最大连环凶杀案——"绿河杀手"加里·里奇韦案。加里·里奇韦于1982年前后两年间，奸杀了48名白人女性，直到2011年才被抓捕归案。<br /><br />
+除了外国的，我国同样有着骇人听闻的"连环杀人狂"。<br /><br />
+"杀人狂魔"杨新海自2001年至2003年期间，在安徽、河南、山东和河北4省作案杀人，共作案22起，杀死65人，重伤5人，强奸23人，警方称其犯罪动机是报复社会，不以劫财为目的，主要是杀人和强奸。<br /><br />
+"11.12系列杀人案"凶手黄勇，自2001年9月至2003年11月，从网吧、录像厅、游戏厅等场所，以资助上学、帮助提高学习成绩、外出游玩和介绍工作为诱饵将男性少年骗到自己家中，先后共杀死无辜青少年17人，轻伤1人。
+二、"连环杀人狂"为何杀人，犯罪动机何在？<br /><br />
+
+对国内相关学者的研究进行归纳及总结，"连环杀人狂"的犯罪动机，大致有以下几类：<br /><br />
+
+1、谋财害命：通过杀人洗劫财物；<br /><br />
+
+2、报复社会：报复社会、政府或特定的组织；<br /><br />
+
+3、滥杀无辜：享受杀人的刺激与快感，嗜血成性；<br /><br />
+
+4、性虐待：为满足畸形的性快感而展开的杀戮。<br /><br />
+三、一般而言，"连环杀人狂"具有怎样的特征？<br /><br />
+
+对国内相关学者的研究进行归纳及总结，"连环杀人狂"的人格特征如下：<br /><br />
+
+1、性格内向阴冷、自私<br /><br />
+
+性格内向，不善换位思考，思路比较单一，少思考，爱较真，不太容易与人沟通，思维方式与其年龄不相符。缺乏交往能力，经常表现为冷酷、执拗、阴沉、孤独。<br /><br />
+
+2、情感细腻而缺乏情感交流能力<br /><br />
+
+情感体验细腻，缺乏与他人情感交流的能力，往往情绪反应强烈、不信任他人，对社会敌视、仇恨，同时具有强烈的压抑感。由于平时表现得老实，不爱说话，常常会令邻居或身边的人误以为正常，案发后常让人感到不可思议。<br /><br />
+
+3、聪慧，意志薄弱，人格异常<br /><br />
+
+"连环杀人狂"一般都比较聪慧， 智力良好。在犯罪冲动面前，难以抑制犯罪欲望，但是在实施犯罪活动时，又能忍受各种挫折与煎熬，克服障碍，以实现犯罪目的。人格异常，多数存在人格障碍，犯罪过程中，无论被害人如何痛苦，哀求，都很难唤起其良心与同情感。<br /><br />
+
+此外，"连环杀人狂"的行为特征如下：<br /><br />
+
+1、极端性：通过疯狂反复地使用暴力进行发泄或报复；<br /><br />
+
+2、预谋性：非精神病人，行为目的明确，行为是在具有符合正常思维逻辑的故意阴谋下进行的'<br /><br />
+
+3、相似性：犯罪手法、犯罪方式、被害对象具有相似性。<br /><br />
+
+四、"连环杀人狂"是如何"炼成"的？<br /><br />
+
+"连环杀人狂"不是一夜间"炼成"的，追溯其经历，常常具有许多的共同特征。  <br /><br />
+
+1、童年时存在着严重的心理创伤：<br /><br />
+
+（1）不安全的依恋关系模式形成的心理创伤<br /><br />
+
+"连环杀人狂"在人际关系的处理上往往是糟糕的，他们一般孤独，没有朋友，没有交流的对象。追根溯源，往往跟他们在早期的依恋关系中，没有形成安全的依恋模式息息相关。<br /><br />
+
+客体关系理论认为，婴儿与最初的抚养者（通常是母亲）之间形成的健康的依恋模式，是其一生中良好人际关系的基础。<br /><br />
+
+在"连环杀人狂"的早年经历里，往往是遭遇最初的抚养者的无情而冷漠地抛弃、忽略，这让他们缺乏安全感，尽管不断寻求安全感但却又无法信任他人。早年的心理创伤促使他们最终只能通过极端的方式处理问题。<br /><br />
+
+（2）童年时痛苦经历留下的心理创伤<br /><br />
+
+心理学家弗洛伊德认为，个体在童年时遭受到的诸如虐待、性侵害等痛苦经历，如果未能得到合理疏导，容易使他们形成极强的报复欲和反社会倾向。<br /><br />
+
+童年时期的创伤也属于创伤后应激障碍（PTSD），PTSD是指个体经历了创伤事件出现的心理失衡状态，当个体再次暴露于创伤事件象征或很相似的内心或外界迹象之时，会引起内心强烈的痛苦感受。<br /><br />
+
+于是，当"连环杀人狂"在生活中，再次体验到创伤事件的迹象之时，被唤起的痛楚将会引领他们开始疯狂的杀戮行动。正如心理学家罗伯特·D·黑尔则的观点，"连环杀手的受害者使杀手想起早年在生活中羞辱过他们的人"。<br /><br />
+
+2、现实中遭遇严重挫折的经历<br /><br />
+
+社会心理学理论中的挫折攻击理论认为，一个人的欲望不能得到满足时，便容易产生挫折感，从而转变为对他人的攻击行为。攻击的发生强度与欲求不满的量成正比，挫折越大，攻击的强度也越大。。<br /><br />
+
+在"连环杀人狂"的经历中，往往遭遇了数次对他们而言，属于严重挫折性的经历，勾起了他们的仇恨。他们将自己在现实中遭遇的挫折，归咎于社会及他人，为了发泄内心的不平，铤而走险，以获得欲望的极大满足。<br /><br />
+
+3、初次杀人阶段得逞，杀戮成瘾<br /><br />
+
+初次杀人阶段，"连环杀人狂"可能还存在着一些恐惧与不安，但是当杀人得逞，而警察尚未发现自己的身份时，他们在过程中获得了久违的控制感、刺激感、成就感，获得了内心极大的满足。<br /><br />
+
+这使得他们的胆量与日俱增，为进一步的杀戮埋下了罪恶的种子。于是杀人频率和程度继续加强，杀人行为成为了他们生活中的一部分，对杀人行为有一定的依赖性，杀戮成瘾。   <br /><br />
+
+参考文献：<br /><br />
+
+1、吕云平.(2004).系列杀人案件的成因、特点及侦查对策.政法学刊，4，66-69.<br /><br />
+
+2、王栋梁.(2008)系列杀人犯犯罪心理分析，硕士学位论文，西南政法大学.<br /><br />
+
+3、王琪月,(2014).童年期经历对犯罪心理形成的影响.法制与社会，3(下)，256-257<br /><br />
+
+原题："连环杀人狂"在现实中真的存在吗？</p>     
+        </div>
+
+        
+    </div>
+    <div id="content02">
+    	<div id="right01">
+        <h4>关于linrooms博客</h4>
+        <hr style="border-top:1px solid #FBEEFD"></hr>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;linrooms博客，是Lin个人技术博客，主要记录和总结心理学方面的知识及我的生活。<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;订阅博客文章，请关注下方微信号，后期会通过订阅号将文章发送到您的手机上。<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;本博客所有内容若需转载请联系我。</p>
+        <h4>联系方式</h4>
+        <hr style="border-top:1px solid #FBEEFD"></hr>
+        <p><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1098214972&amp;site=qq&amp;menu=yes" target="_blank"><img src="images/企鹅.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/微信.png" onmouseover="mOver(this)" onmouseout="mOut(this)"/></p>
+        <p id="erwei" style="display:none;"><img src="images/二维码.png"</p>
+        </div>
+        
+        <div id="right02">
+            <h3 class="xiaotu"><a href="#">独白</a></h3>
+            <h3><a href="#">心情</a></h3>  
+            <h3><a href="#">唯美</a></h3>
+            <h3><a href="#">发现</a></h3>
+            <div id="flash" style="display:block">
+            	<div id="img1" style="position:absolute;left:0;width:300px; height:250px; overflow:hidden">
+                	<div style="width:300px; height:250px; background:url(images/dubai/1.png)"></div>
+                    <div style="width:300px; height:250px; background:url(images/dubai/2.png)"></div>
+        			<div style="width:300px; height:250px; background:url(images/dubai/3.png)"></div>
+       			    <div style="width:300px; height:250px; background:url(images/dubai/4.png)"></div>
+                </div>	
+                <ul id="num1" style="position:absolute; right:0px; bottom:0px;height:16px">
+                   <li class="ys1">1</li>
+                   <li class="ys2">2</li>
+                   <li class="ys2">3</li>
+                   <li class="ys2">4</li>
+                </ul>
+            </div>
+            <div id="flash">
+            	<div id="img2" style="position:absolute;left:0;width:300px; height:250px; overflow:hidden">
+                	<div style="width:300px; height:250px; background:url(images/xinqing/1.png)"></div>
+                    <div style="width:300px; height:250px; background:url(images/xinqing/2.png)"></div>
+        			<div style="width:300px; height:250px; background:url(images/xinqing/3.png)"></div>
+       			    <div style="width:300px; height:250px; background:url(images/xinqing/4.png)"></div>
+                </div>	
+                <ul id="num2" style="position:absolute; right:0px; bottom:0px;height:16px">
+                   <li class="ys1">1</li>
+                   <li class="ys2">2</li>
+                   <li class="ys2">3</li>
+                   <li class="ys2">4</li>
+                </ul>
+            </div>
+            <div id="flash">
+            	<div id="img3" style="position:absolute;left:0;width:300px; height:250px; overflow:hidden">
+                	<div style="width:300px; height:250px; background:url(images/weimei/1.png)"></div>
+                    <div style="width:300px; height:250px; background:url(images/weimei/2.png)"></div>
+        			<div style="width:300px; height:250px; background:url(images/weimei/3.png)"></div>
+       			    <div style="width:300px; height:250px; background:url(images/weimei/4.png)"></div>
+                </div>	
+                <ul id="num3" style="position:absolute; right:0px; bottom:0px;height:16px">
+                   <li class="ys1">1</li>
+                   <li class="ys2">2</li>
+                   <li class="ys2">3</li>
+                   <li class="ys2">4</li>
+                </ul>
+            </div>
+            <div id="flash">
+            	<div id="img4" style="position:absolute;left:0;width:300px; height:250px; overflow:hidden">
+                	<div style="width:300px; height:250px; background:url(images/faxian/1.png)"></div>
+                    <div style="width:300px; height:250px; background:url(images/faxian/2.png)"></div>
+        			<div style="width:300px; height:250px; background:url(images/faxian/3.png)"></div>
+       			    <div style="width:300px; height:250px; background:url(images/faxian/4.png)"></div>
+                </div>	
+                <ul id="num4" style="position:absolute; right:0px; bottom:0px;height:16px">
+                   <li class="ys1">1</li>
+                   <li class="ys2">2</li>
+                   <li class="ys2">3</li>
+                   <li class="ys2">4</li>
+                </ul>
+            </div>
+		</div>
+        
+        <div id="right03">
+        <h4>热门文章</h4>
+        <hr style="border-top:1px solid #FBEEFD"></hr>
+        <ul>
+        <li><a href="/post/css_input_uploadmh" title="本文将着墨于探讨是什么驱使了极限运动者冒着致残甚至致命的危险">本文将着墨于探讨是什么驱使了极限运动者冒着致残甚至致命的危险</a></li>
+        <li><a href="/post/sublime_use" title="约炮心理学：男人不信任美女，女人信任帅哥">约炮心理学：男人不信任美女，女人信任帅哥</a></li>
+        <li><a href="/post/css3_bg_multi" title="为什么没人喜欢你？可能是因为你太"正常"了">为什么没人喜欢你？可能是因为你太"正常"了</a></li>
+        <li><a href="/post/css_mh_ck_radio" title="为什么我们都会在青春期时暗恋一个人？">为什么我们都会在青春期时暗恋一个人？</a></li>
+        <li><a href="/post/input_file_leixing" title="姑娘，为什么你觉得自己"不配被爱"？">姑娘，为什么你觉得自己"不配被爱"？</a></li>
+        <li><a href="/post/js_setTimeout" title="真正的成长，是学会和自己在一起">真正的成长，是学会和自己在一起</a></li>
+        <li><a href="/post/js_youku_tk" title="父母的道歉，比他们给的伤害更难承受">父母的道歉，比他们给的伤害更难承受</a></li>
+        <li><a href="/post/css_unit_calc" title="如何正确的看待自己，找到人生方向？">如何正确的看待自己，找到人生方向？</a></li>
+        <li><a href="/post/css_common" title="你又不是我，你怎么知道我面对抑郁没有坚强过？">你又不是我，你怎么知道我面对抑郁没有坚强过？</a></li>
+        <li><a href="/post/juzhuzheng_jf_dy" title="我原谅你，并不代表你是对的">我原谅你，并不代表你是对的</a></li>
+        <li><a href="/post/mailto_link_html" title="你每日的生活模式，就是你命运的一个横切面">你每日的生活模式，就是你命运的一个横切面</a></li>
+        </ul>
+        </div>
+        <div id="right04">
+        <h4>轻松一刻</h4>
+        <div class="Numb" style="height:200px;width:300px;position:relative;top:0px;left:0px">
+            <div class="numb1"><img src="images/dianwo.png"/></div>
+            <div class="numb2">让你点就点,你真可爱！</div>
+            <div class="numb4"><img src="images/laugh.gif" height="200";width="300"/></div>
+    </div>
+        </div>
+        <div id="right05">
+        <h4>友情链接</h4>
+        <hr style="border-top:1px solid #FBEEFD"></hr>
+        <ul class="friendship">
+              <li><a href="#" title="前端博客">前端博客</a></li>
+              <li><a href="#" title="前端技术">前端技术</a></li>
+              <li><a href="#/" title="前端技术博客">前端技术博客</a></li>
+              <li><a href="#" title="web技术博客">web技术博客</a></li>
+              <li><a href="#" title="haorooms前端博客">haorooms前端博客</a></li>
+              <li><a href="#" title="前端开发">前端开发</a></li>
+              <li><a href="#" title="上海SAP培训" target="_blank">上海SAP培训</a></li>
+              <li><a href="#" title="SAP培训" target="_blank">SAP培训</a></li>
+              <li><a href="#" title="rin部落" target="_blank">rin部落</a></li>
+              <li><a href="#" title="淡忘~浅思" target="_blank">淡忘~浅思</a></li>
+              <li><a href="#" title="前端攻城狮" target="_blank">前端攻城狮</a></li>
+              <li><a href="#" title="web前端开发" target="_blank">web前端开发</a></li>
+              <li><a href="#" title="一只羊博客" target="_blank">一只羊博客</a></li>
+<!--          <li><a href="http://www.lerry.cn/" title="lerry技术博客" target="_blank">lerry技术博客</a></li> -->
+              <li><a href="#" title="前端开发培训" target="_blank">前端开发培训</a></li>
+              <li><a href="#" title="web前端开发" target="_blank">web前端开发</a></li>  
+              <li><a href="#" title="前端度" target="_blank">前端度</a></li>  
+              <li><a href="#" target="_blank">php小松博客</a></li>
+              <li><a href="#" target="_blank">问津专家云</a></li> 
+        </ul>
+        </div>
+        
+    </div>
+</div>
+<div id="bottom">
+我的:<a href="#">csdn博客</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">新浪微博</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">百度空间</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">知乎</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">昵图</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">github</a>&nbsp;&nbsp;&nbsp;&nbsp;|<a href="#">网站地图</a>
+<p>Copyright © Aaron All Rights Reserved <a href="#">沪ICP备14034283号-1</a></p>
+</div>
+</body>
+</html>
